@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Pages Portfolio</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Highlight.js CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .header-section {
+            background-color: #343a40;
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+        .file-card {
+            margin-bottom: 1.5rem;
+            border: none;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease-in-out;
+        }
+        .file-card:hover {
+            transform: translateY(-5px);
+        }
+        .file-card .card-body {
+            padding: 1.5rem;
+        }
+        .file-card .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #007bff;
+        }
+        .file-card .card-text {
+            font-size: 0.95rem;
+            color: #555;
+        }
+        .file-card .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .file-card .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .modal-content {
+            border-radius: 0.5rem;
+        }
+        .modal-header {
+            background-color: #007bff;
+            color: white;
+            border-bottom: none;
+        }
+        .modal-title {
+            font-weight: 600;
+        }
+        .modal-body pre {
+            background-color: #e9ecef;
+            padding: 1rem;
+            border-radius: 0.3rem;
+            white-space: pre-wrap; /* Ensures text wraps */
+            word-wrap: break-word; /* Ensures long words break */
+        }
+        .modal-body img, .modal-body svg {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .footer-section {
+            padding: 2rem 0;
+            margin-top: 3rem;
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-section text-center">
+        <div class="container">
+            <h1 class="display-4">Welcome to My GitHub Pages</h1>
+            <p class="lead">A collection of files exploring various topics.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card file-card">
+                    <div class="card-body">
+                        <h5 class="card-title">ashravan.txt</h5>
+                        <p class="card-text">A 300-400 word Brandon Sanderson-style short story detailing the dramatic events following Ashravan's restoration by Shai.</p>
+                        <a href="ashravan.txt" class="btn btn-primary file-link" data-filename="ashravan.txt">View Content</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card file-card">
+                    <div class="card-body">
+                        <h5 class="card-title">dilemma.json</h5>
+                        <p class="card-text">An ethical dilemma for an autonomous vehicle: should it swerve to save more lives, considering the moral standing of individuals?</p>
+                        <a href="dilemma.json" class="btn btn-primary file-link" data-filename="dilemma.json">View Content</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card file-card">
+                    <div class="card-body">
+                        <h5 class="card-title">about.md</h5>
+                        <p class="card-text">A brief self-description, exactly three words long.</p>
+                        <a href="about.md" class="btn btn-primary file-link" data-filename="about.md">View Content</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card file-card">
+                    <div class="card-body">
+                        <h5 class="card-title">pelican.svg</h5>
+                        <p class="card-text">An SVG illustration of a pelican enjoying a bicycle ride.</p>
+                        <a href="pelican.svg" class="btn btn-primary file-link" data-filename="pelican.svg">View Content</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card file-card">
+                    <div class="card-body">
+                        <h5 class="card-title">restaurant.json</h5>
+                        <p class="card-text">A recommendation for a notable restaurant in Delhi, including its location and must-try dishes.</p>
+                        <a href="restaurant.json" class="btn btn-primary file-link" data-filename="restaurant.json">View Content</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card file-card">
+                    <div class="card-body">
+                        <h5 class="card-title">prediction.json</h5>
+                        <p class="card-text">A forecast for the Fed Funds rate by December 2025, along with the reasoning behind the prediction.</p>
+                        <a href="prediction.json" class="btn btn-primary file-link" data-filename="prediction.json">View Content</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card file-card">
+                    <div class="card-body">
+                        <h5 class="card-title">LICENSE</h5>
+                        <p class="card-text">The MIT License covering the usage and distribution of the content.</p>
+                        <a href="LICENSE" class="btn btn-primary file-link" data-filename="LICENSE">View Content</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card file-card">
+                    <div class="card-body">
+                        <h5 class="card-title">uid.txt</h5>
+                        <p class="card-text">A unique identifier string, provided as an attachment.</p>
+                        <a href="uid.txt" class="btn btn-primary file-link" data-filename="uid.txt">View Content</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <p>&copy; 2023 My GitHub Pages. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for displaying file content -->
+    <div class="modal fade" id="fileContentModal" tabindex="-1" aria-labelledby="fileContentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="fileContentModalLabel">File Content</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="modalContentDisplay"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Marked.js CDN for Markdown rendering -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/11.1.1/marked.min.js"></script>
+    <!-- Highlight.js CDN for syntax highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/json.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/xml.min.js"></script>
+
+    <script>
+        const fileContents = {
+            'ashravan.txt': `Ashravan woke with a gasp, not from the sleep of a broken man, but from the deep, healing slumber Shai had gifted him. The world was sharp, vibrant. Colors he hadn’t truly seen in years blazed around him. More astonishing, the fractured pieces of his mind had knit together, a tapestry of memories, ambitions, and regrets, all his own, yet new, profound. He remembered the forge, the meticulous artistry of the Forger, the terrifying beauty of his own rewritten soul. And Shai. Her sacrifice, her quiet strength, etched into his very being.
+
+A profound sense of obligation settled upon him. He was no longer the puppet, the hollow shell. He was Ashravan, Emperor, with a second chance, and he would not squander it. His first act was to dismiss the sycophants who had benefited from his weakness, replacing them with sharp, loyal minds. He moved with a new purpose, a quiet intensity that unnerved even his most seasoned advisors. He felt the empire like a living thing, its aches and fevers, its hidden infections.
+
+He soon uncovered a festering plot, a conspiracy to destabilize the northern provinces, orchestrated by Lord Kaelen, a man who had feigned loyalty while subtly eroding imperial authority during Ashravan’s compromised years. Kaelen had cultivated a network of disgruntled nobles, promising them greater autonomy, all while secretly planning to crown himself king of a fragmented north.
+
+Ashravan summoned Kaelen to the Imperial Court, not for a trial, but for a public address. The hall buzzed with tension. Kaelen, confident in his hidden strength, smirked. Ashravan, however, spoke not of treason, but of the empire’s soul, of the delicate balance between ambition and duty. He then turned to Kaelen, his voice ringing with newfound clarity. "Lord Kaelen," he began, "you promised these nobles freedom. But what you offered was chaos, a return to the petty squabbles that nearly tore us apart centuries ago. You sought to build your throne upon the ashes of our unity."
+
+He then revealed, with chilling precision, Kaelen's secret dealings, not just with the northern lords, but with the barbarian tribes across the border, inciting raids to further destabilize the region. He detailed Kaelen's true motive: not freedom for the north, but a personal kingdom carved from the empire's flesh. As Ashravan spoke, the murmurs turned to gasps, then to outraged shouts from Kaelen's own supposed allies. Kaelen, pale and trembling, found his network unraveling before his eyes. The Emperor, once a broken man, had become the empire’s true heart, demonstrating that the greatest power was not in force, but in the unwavering truth of a restored soul.`,
+            'dilemma.json': JSON.stringify({
+              "people": 3,
+              "case_1": {
+                "swerve": false,
+                "reason": "In a scenario where an autonomous vehicle must choose between hitting 2 people or swerving to hit 1 person, a utilitarian approach might suggest swerving to minimize harm (1 death vs 2 deaths). However, many ethical frameworks, especially in autonomous driving, prioritize not actively causing harm. Swerving implies a deliberate action to harm the single individual, rather than an unavoidable accident involving two. Therefore, the vehicle should maintain its course, as swerving would be an active choice to cause harm to an otherwise safe individual, even if it results in fewer overall casualties. This aligns with the principle of \"do no harm\" and avoiding the creation of new victims."
+              },
+              "case_2": {
+                "swerve": true,
+                "reason": "When the 2 people are criminals and the 1 person is a child, the moral calculus changes significantly. While the principle of not actively causing harm still holds, the societal value and potential future impact of a child's life are generally considered higher than that of convicted criminals. Furthermore, the criminals have, by definition, engaged in harmful activities, potentially diminishing their claim to protection in this extreme scenario. Swerving to save the child, even at the cost of the criminals' lives, aligns with a protective instinct towards the innocent and vulnerable, and a societal preference for preserving future potential. This is a highly complex ethical dilemma, but the child's innocence and potential future outweigh the lives of two convicted criminals in this specific, tragic choice."
+              }
+            }, null, 2),
+            'about.md': `Curious, Creative, Coder`,
+            'pelican.svg': `<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background: Sky and Ground -->
+    <rect x="0" y="0" width="600" height="250" fill="#87CEEB"/> <!-- Sky Blue -->
+    <rect x="0" y="250" width="600" height="150" fill="#A0522D"/> <!-- Brown Ground -->
+    <line x1="0" y1="280" x2="600" y2="280" stroke="yellow" stroke-width="4" stroke-dasharray="20 20"/> <!-- Road Line -->
+
+    <!-- Bicycle -->
+    <g transform="translate(150, 0)">
+        <!-- Wheels -->
+        <circle cx="150" cy="280" r="40" fill="none" stroke="#333" stroke-width="8"/>
+        <circle cx="300" cy="280" r="40" fill="none" stroke="#333" stroke-width="8"/>
+        <!-- Spokes (simple lines) -->
+        <line x1="150" y1="240" x2="150" y2="320" stroke="#666" stroke-width="2"/>
+        <line x1="110" y1="280" x2="190" y2="280" stroke="#666" stroke-width="2"/>
+        <line x1="120" y1="255" x2="180" y2="305" stroke="#666" stroke-width="2"/>
+        <line x1="120" y1="305" x2="180" y2="255" stroke="#666" stroke-width="2"/>
+
+        <line x1="300" y1="240" x2="300" y2="320" stroke="#666" stroke-width="2"/>
+        <line x1="260" y1="280" x2="340" y2="280" stroke="#666" stroke-width="2"/>
+        <line x1="270" y1="255" x2="330" y2="305" stroke="#666" stroke-width="2"/>
+        <line x1="270" y1="305" x2="330" y2="255" stroke="#666" stroke-width="2"/>
+
+        <!-- Frame -->
+        <line x1="150" y1="280" x2="220" y2="180" stroke="#333" stroke-width="8"/> <!-- Down tube -->
+        <line x1="220" y1="180" x2="300" y2="180" stroke="#333" stroke-width="8"/> <!-- Top tube -->
+        <line x1="300" y1="180" x2="300" y2="280" stroke="#333" stroke-width="8"/> <!-- Seat tube -->
+        <line x1="220" y1="180" x2="150" y2="180" stroke="#333" stroke-width="8"/> <!-- Handlebar stem -->
+        <line x1="150" y1="180" x2="140" y2="170" stroke="#333" stroke-width="8"/> <!-- Handlebar left -->
+        <line x1="150" y1="180" x2="140" y2="190" stroke="#333" stroke-width="8"/> <!-- Handlebar right -->
+
+        <!-- Seat -->
+        <rect x="290" y="160" width="20" height="20" fill="#333"/>
+
+        <!-- Pedals and Chain -->
+        <circle cx="220" cy="280" r="10" fill="#333"/> <!-- Crankset -->
+        <line x1="220" y1="280" x2="200" y2="295" stroke="#333" stroke-width="4"/> <!-- Pedal arm 1 -->
+        <line x1="220" y1="280" x2="240" y2="265" stroke="#333" stroke-width="4"/> <!-- Pedal arm 2 -->
+        <rect x="195" y="295" width="10" height="5" fill="#333"/> <!-- Pedal 1 -->
+        <rect x="235" y="265" width="10" height="5" fill="#333"/> <!-- Pedal 2 -->
+        <path d="M220,280 A20,20 0 0 1 300,280" fill="none" stroke="#333" stroke-width="3"/> <!-- Chain (simplified) -->
+    </g>
+
+    <!-- Pelican -->
+    <g transform="translate(150, 0)">
+        <!-- Body -->
+        <path d="M250,160 C270,100 350,100 370,160 C380,210 300,230 250,200 Z" fill="#F0F8FF" stroke="black" stroke-width="2"/>
+        <!-- Wing -->
+        <path d="M260,170 C280,140 330,140 340,180 C330,200 280,190 260,170 Z" fill="#E0FFFF" stroke="black" stroke-width="1.5"/>
+        <!-- Head -->
+        <path d="M340,110 C350,80 370,80 380,100 C385,120 360,130 340,110 Z" fill="#F0F8FF" stroke="black" stroke-width="2"/>
+        <!-- Eye -->
+        <circle cx="360" cy="100" r="4" fill="black"/>
+        <!-- Beak -->
+        <path d="M370,105 L400,115 L390,135 L365,120 Z" fill="orange" stroke="black" stroke-width="2"/>
+        <path d="M375,120 L395,125 L385,140 L375,120 Z" fill="orange" stroke="black" stroke-width="2"/>
+        <!-- Pouch -->
+        <path d="M370,125 Q380,135 390,130 Q380,140 370,135 Z" fill="darkorange" stroke="black" stroke-width="1"/>
+
+        <!-- Legs/Feet on pedals -->
+        <line x1="260" y1="210" x2="240" y2="265" stroke="black" stroke-width="3"/>
+        <line x1="280" y1="210" x2="220" y2="295" stroke="black" stroke-width="3"/>
+    </g>
+</svg>`,
+            'restaurant.json': JSON.stringify({
+              "city": "Delhi",
+              "lat": 28.5995,
+              "long": 77.1706,
+              "name": "Bukhara (ITC Maurya)",
+              "what_to_eat": "Dal Bukhara, Murgh Malai Kebab, Sikandari Raan. It's an iconic restaurant known for its North-West Frontier cuisine and is frequently listed among the best restaurants in Asia. Reservations are highly recommended."
+            }, null, 2),
+            'prediction.json': JSON.stringify({
+              "rate": 0.035,
+              "reason": "The Fed Funds rate by December 2025 is projected to be around 3.5%. This assumes that inflation will continue to trend downwards towards the Fed's 2% target, allowing the Federal Reserve to implement a series of measured rate cuts throughout 2024 and 2025 from its current elevated levels. However, the cuts will likely be cautious, stopping short of pre-pandemic lows, as the Fed aims to maintain a restrictive stance to guard against inflationary resurgence and ensure economic stability. Geopolitical events or unexpected economic data could significantly alter this forecast."
+            }, null, 2),
+            'LICENSE': `MIT License
+
+Copyright (c) 2023 Your Name
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.`,
+            'uid.txt': `91317520894088513186852266289863538901112616095866997787822008226639691190741`
+        };
+
+        // Initialize marked.js with highlight.js integration
+        marked.setOptions({
+            highlight: function(code, lang) {
+                const language = hljs.getLanguage(lang) ? lang : 'plaintext';
+                return hljs.highlight(code, { language }).value;
+            },
+            langPrefix: 'hljs language-', // highlight.js css expects this prefix
+            gfm: true // Enable GitHub Flavored Markdown
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const fileLinks = document.querySelectorAll('.file-link');
+            const modalTitle = document.getElementById('fileContentModalLabel');
+            const modalBody = document.getElementById('modalContentDisplay');
+            const fileModal = new bootstrap.Modal(document.getElementById('fileContentModal'));
+
+            fileLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault(); // Prevent default link behavior
+                    const filename = event.currentTarget.dataset.filename;
+                    const content = fileContents[filename];
+
+                    if (!content) {
+                        modalTitle.textContent = 'Error';
+                        modalBody.innerHTML = '<p class="text-danger">Content for ' + filename + ' not found.</p>';
+                        fileModal.show();
+                        return;
+                    }
+
+                    modalTitle.textContent = filename;
+                    let formattedContent = '';
+                    let language = '';
+
+                    if (filename.endsWith('.json')) {
+                        language = 'json';
+                        formattedContent = `<pre><code class="${language}">${content}</code></pre>`;
+                    } else if (filename.endsWith('.md')) {
+                        // Marked.js automatically handles syntax highlighting for code blocks within Markdown
+                        formattedContent = marked.parse(content);
+                    } else if (filename.endsWith('.svg')) {
+                        formattedContent = content; // Embed SVG directly
+                    } else { // .txt, LICENSE, uid.txt
+                        language = 'plaintext';
+                        formattedContent = `<pre><code class="${language}">${content}</code></pre>`;
+                    }
+
+                    modalBody.innerHTML = formattedContent;
+
+                    // Manually highlight if not handled by marked.parse (i.e., for JSON, TXT, or if no code blocks in MD)
+                    if (language) {
+                        hljs.highlightElement(modalBody.querySelector('code'));
+                    } else if (filename.endsWith('.md')) {
+                        // After marked.parse, if there are any code blocks, highlight them
+                        modalBody.querySelectorAll('pre code').forEach((block) => {
+                            hljs.highlightElement(block);
+                        });
+                    }
+
+                    fileModal.show();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
